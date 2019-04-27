@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width = device-width,
+    initial-scale = 1"
+    />
+    <title>JavaScript Stuff</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The stuff that I added -->
+    <link rel="stylesheet" type="text/css" href="static/css/mainstyle.css" />
+    <script src="static/js/JSTut.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h3>Random text thing</h3>
+        <form class="form-inline">
+          <input type="text" class="form-control" id="i0" value="Person" />
+          <input type="text" class="form-control" id="i1" value="Noun" />
+          <input type="text" class="form-control" id="i2" value="Verb" />
+          <input type="text" class="form-control" id="i3" value="Verb" />
+          <input type="text" class="form-control" id="i4" value="Verb" />
+          <input type="text" class="form-control" id="i5" value="Verb" />
+          <input type="text" class="form-control" id="i6" value="Plural Verb" />
+          <input type="text" class="form-control" id="i7" value="Verb" />
+          <input type="text" class="form-control" id="i8" value="Adjective" />
+          <input type="text" class="form-control" id="i9" value="Noun" />
+          <input type="text" class="form-control" id="i10" value="Event" />
+          <input type="text" class="form-control" id="i11" value="Noun" />
+          <input type="text" class="form-control" id="i12" value="Body Part" />
+          <input type="text" class="form-control" id="i13" value="Noun" />
+        </form>
+        <br /><br />
+        <button type="submit" class="btn-lg" onClick="alert('Hello')">
+          Hello
+        </button>
+        <br />
+        <button type="submit" class="btn-lg" onClick="calcPI(100000000)">
+          Get PI
+        </button>
+        <br />
+        <button type="submit" class="btn-lg" onClick="getFibList()">
+          Get Fibs
+        </button>
+        <input
+          id="fib_iterations"
+          type="text"
+          name="iterations"
+          value="iterations"
+        />
+        <br />
+        <button type="submit" class="btn-lg" onClick="madLibGenerator()">
+          MadLib Generator
+        </button>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Output</span>
+          </div>
+        </div>
+        <textarea id="output1" rows="18" class="form-control"></textarea>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
