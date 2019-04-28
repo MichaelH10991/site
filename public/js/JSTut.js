@@ -16,7 +16,7 @@ function getFibList(n = document.getElementById("fib_iterations").value) {
   console.log(n)
   if (isNaN(n) || n <= 0) {
     console.log("triggered")
-    document.getElementById("output1").value = "Enter positive number!"
+    document.getElementById("output1").innerHTML = "Enter positive number!"
   }
   let a = 0,
     b = 1,
@@ -81,4 +81,17 @@ function createMLSentence() {
     mLArray[matchIndex] = inputArray[i]
   }
   document.getElementById("output1").value = mLArray.join(" ")
+}
+
+var state = 0
+function toggle() {
+  console.log(`toggle state ${state}`)
+  if (state % 2 == 0) {
+    document.getElementById("output1").value = "On"
+    state++
+    return
+  }
+  document.getElementById("output1").value = "Off"
+  state++
+  return
 }
