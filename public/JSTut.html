@@ -23,11 +23,12 @@
     <!-- The stuff that I added -->
     <link rel="stylesheet" type="text/css" href="static/css/mainstyle.css" />
     <script src="static/js/JSTut.js"></script>
+    <script src="static/js/comment-handler.js"></script>
   </head>
 
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div id="jumbo" class="jumbotron">
         <h3>Random text thing</h3>
         <form class="form-inline">
           <input type="text" class="form-control" id="i0" value="Person" />
@@ -80,7 +81,12 @@
           </div>
         </div>
         <textarea id="output1" rows="18" class="form-control"></textarea>
-        <textarea id="comment-box" class="form-control"></textarea>
+        <textarea id="comment-box" class="form-control">
+Write a comment</textarea
+        >
+        <button type="submit" id="submit" class="btn-lg" onclick="submit()">
+          Submit
+        </button>
       </div>
     </div>
 
