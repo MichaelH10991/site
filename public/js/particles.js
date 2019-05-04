@@ -1,10 +1,10 @@
 let bubble
-let number_of_bubbles = 1000
+let number_of_bubbles = 50
 let bubbles = []
 class Bubble {
-  constructor(initX, initY, initR) {
-    this.x = random(width)
-    this.y = random(height)
+  constructor(initX, initY) {
+    this.x = initX
+    this.y = initY
     this.r = random(10, 40)
   }
 
@@ -30,7 +30,7 @@ class Bubble {
 function setup() {
   createCanvas(600, 400)
   for (let i = 0; i < number_of_bubbles; i++) {
-    bubbles[i] = new Bubble()
+    bubbles[i] = new Bubble(random(width), random(height))
   }
 }
 
@@ -40,4 +40,9 @@ function draw() {
     bubbles[i].move()
     bubbles[i].show()
   }
+}
+
+function mouseDragged() {
+  let bubble = new Bubble(mouseX, mouseY)
+  bubbles.push(bubble)
 }
