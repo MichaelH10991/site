@@ -1,7 +1,7 @@
 var express = require("express")
 var app = express()
 var path = require("path")
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8081
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public/JSTut.html"))
@@ -9,4 +9,4 @@ app.get("/", (req, res) => {
 
 app.use("/static", express.static(path.join(__dirname, "/public")))
 
-app.listen(port)
+app.listen(port, () => console.log(`listening on ${port}`))
